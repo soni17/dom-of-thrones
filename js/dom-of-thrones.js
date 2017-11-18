@@ -11,5 +11,7 @@ function frame(actions) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  scene1()
+  scene2()
   scene3()
 })

@@ -4,7 +4,7 @@ function scene3() {
   stage = document.querySelector('#stage');
   mySrc = desert.getAttribute('src')
   stageImg = document.querySelector('#stage-img')
-  stageImg.setAttribute('src', mySrc)
+
 
 
   // Setup Cast
@@ -25,7 +25,6 @@ function scene3() {
 
   danerysContainer.append(danerys);
   danerysContainer.append(blueDress);
-  stage.append(danerysContainer);
 
 
   // Character 2
@@ -46,7 +45,6 @@ function scene3() {
 
   drogoContainer.append(drogo);
   drogoContainer.append(drogoSuit);
-  stage.append(drogoContainer);
 
 
   // Setup Props
@@ -57,7 +55,6 @@ function scene3() {
   egg.style.width = '5%'
   egg.style.top = '60%';
   egg.style.left = '17%'
-  stage.append(egg);
 
 
   // Prop 2
@@ -65,6 +62,14 @@ function scene3() {
   // Action!
 
   // Stage direction 1
+
+  frame(function(){
+    stageImg.setAttribute('src', mySrc)
+    stage.append(danerysContainer);
+    stage.append(drogoContainer);
+    stage.append(egg);
+  })
+
   frame(function() {
     egg.style.top = '60%';
     egg.style.left = '17%'
@@ -143,7 +148,9 @@ function scene3() {
   // Stage direction 2
 
   frame(function() {
-
+    stage.removeChild(danerysContainer);
+    stage.removeChild(drogoContainer);
+    stage.removeChild(egg);
   })
 
 }

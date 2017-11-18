@@ -5,7 +5,6 @@ function scene2() {
   stageImg = stage.querySelector('#stage-img');
   castle = document.querySelector('#castle');
   castleImgSrc = castle.getAttribute('src');
-  stageImg.setAttribute('src', castleImgSrc);
 
   // Setup Cast
 
@@ -28,7 +27,6 @@ function scene2() {
 
   nedContainer.append(ned);
   nedContainer.append(leather);
-  stage.append(nedContainer);
 
   // Character 2
   joffContainer = document.createElement("div");
@@ -49,7 +47,7 @@ function scene2() {
 
   joffContainer.append(joffrey);
   joffContainer.append(kingArmour);
-  stage.append(joffContainer);
+
 
 
   // Setup Props
@@ -60,7 +58,7 @@ function scene2() {
   sword.style.top = '77%'
   sword.style.left = '31%'
   sword.style.height = '5%'
-  stage.append(sword);
+
   sword.style.transform = 'rotateY(150deg)'
 
   // Prop 2
@@ -68,6 +66,13 @@ function scene2() {
   // Action!
 
   // Stage direction 1
+
+  frame (function(){
+    stageImg.setAttribute('src', castleImgSrc);
+    stage.append(nedContainer);
+    stage.append(joffContainer);
+    stage.append(sword);
+  })
 
   frame(function() {
     sword.style.top = '77%'
@@ -125,5 +130,12 @@ function scene2() {
     joffrey.style.left = '300%'
     joffrey.style.transform = 'rotateZ(100deg)'
   })
+
+  frame (function(){
+    stage.removeChild(joffContainer)
+    stage.removeChild(nedContainer)
+    stage.removeChild(sword)
+  })
+
 
 }
