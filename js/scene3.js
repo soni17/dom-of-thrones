@@ -73,73 +73,88 @@ function scene3() {
   frame(function() {
     egg.style.top = '60%';
     egg.style.left = '17%'
+    egg.style.transform = 'rotateZ(40deg)'
     })
   frame(function() {
     egg.style.top = '58%';
     egg.style.left = '25%'
+    egg.style.transform = 'rotateZ(80deg)'
   })
   frame(function() {
     egg.style.top = '50%';
     egg.style.left = '35%'
+    egg.style.transform = 'rotateZ(120deg)'
   })
   frame(function() {
     egg.style.top = '45%';
     egg.style.left = '45%'
+    egg.style.transform = 'rotateZ(160deg)'
   })
   frame(function() {
     egg.style.top = '50%';
     egg.style.left = '55%'
+    egg.style.transform = 'rotateZ(220deg)'
   })
 
   frame(function() {
     egg.style.top = '55%';
     egg.style.left = '65%'
+    egg.style.transform = 'rotateZ(260deg)'
   })
 
   frame(function() {
     egg.style.top = '58%';
     egg.style.left = '70%'
+    egg.style.transform = 'rotateZ(300deg)'
   })
 
   frame(function() {
     egg.style.top = '60%';
     egg.style.left = '78%'
+    egg.style.transform = 'rotateZ(340deg)'
   })
 
   frame(function() {
     egg.style.top = '60%';
     egg.style.left = '78%'
+    egg.style.transform = 'rotateZ(360deg)'
   })
 
   frame(function() {
     egg.style.top = '50%';
     egg.style.left = '60%'
+    egg.style.transform = 'rotateZ(320deg)'
   })
 
 
   frame(function() {
     egg.style.top = '40%';
     egg.style.left = '50%'
+    egg.style.transform = 'rotateZ(280deg)'
   })
 
   frame(function() {
     egg.style.top = '35%';
     egg.style.left = '40%'
+    egg.style.transform = 'rotateZ(220deg)'
   })
 
   frame(function() {
     egg.style.top = '40%';
     egg.style.left = '30%'
+    egg.style.transform = 'rotateZ(180deg)'
   })
 
   frame(function() {
     egg.style.top = '50%';
     egg.style.left = '22%'
+    egg.style.transform = 'rotateZ(120deg)'
   })
 
   frame(function() {
     egg.style.top = '60%';
     egg.style.left = '17%'
+    egg.style.transform = 'rotateZ(50deg)'
   })
 
 

@@ -112,7 +112,7 @@ function scene2() {
     joffrey.style.left = '90%'
     joffrey.style.transform = 'rotateZ(40deg)'
   })
-
+ 
   frame(function() {
     joffrey.style.top = '35%'
     joffrey.style.left = '160%'
